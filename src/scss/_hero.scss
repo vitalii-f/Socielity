@@ -1,5 +1,5 @@
 .hero {
-    height: 100vh;
+    min-height: 100vh;
     background-image: url("../img/hero_bg.svg");
     background-repeat: no-repeat;
     background-position: center center;
@@ -13,8 +13,8 @@
         .hero__title {
             padding: 0 2%;
             font-weight: 700;
-            font-size: 56px;
-            line-height: 78px;
+            font-size: clamp(30px, 3vw, 56px);
+            line-height: 139.285714%;
             text-align: center;
             letter-spacing: 0.02em;
             color: $color-grey-dark;
@@ -25,7 +25,7 @@
         .hero__description {
             padding: 0 5%;
             font-size: 16px;
-            line-height: 24px;
+            line-height: 150%;
             text-align: center;
             color: $color-grey;
         }

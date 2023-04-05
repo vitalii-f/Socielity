@@ -37,7 +37,7 @@
 .header__wrapper .logo {
   font-weight: 700;
   font-size: 36px;
-  line-height: 48px;
+  line-height: 133.333333%;
   color: #4579CB;
   -webkit-box-flex: 0.75;
       -ms-flex: 0.75;
@@ -152,7 +152,7 @@
 }
 
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("../img/hero_bg.svg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -174,8 +174,8 @@
 .hero .hero__wrapper .hero__title {
   padding: 0 2%;
   font-weight: 700;
-  font-size: 56px;
-  line-height: 78px;
+  font-size: clamp(30px, 3vw, 56px);
+  line-height: 139.285714%;
   text-align: center;
   letter-spacing: 0.02em;
   color: #474747;
@@ -186,7 +186,7 @@
 .hero .hero__wrapper .hero__description {
   padding: 0 5%;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 150%;
   text-align: center;
   color: #666666;
 }
@@ -206,7 +206,7 @@
   color: #666666;
   text-align: center;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 150%;
 }
 .trusted__wrapper .swiper {
   margin-top: 45px;
@@ -266,7 +266,7 @@
 }
 .communicate__wrapper .communicate__item .communicate__text p {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 150%;
   color: #666666;
 }
 .why-communitrader__wrapper {
@@ -275,7 +275,7 @@
 .why-communitrader__wrapper .why-communitrader__description {
   margin-top: 24px;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 150%;
   text-align: center;
   color: #666666;
 }
@@ -321,13 +321,13 @@
 .why-communitrader__wrapper .why-communitrader__reasons .reason h4 {
   font-weight: 700;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 140%;
   text-align: center;
   color: #474747;
 }
 .why-communitrader__wrapper .why-communitrader__reasons .reason p {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 150%;
   text-align: center;
   color: #666666;
 }
@@ -714,7 +714,7 @@ body {
 h3 {
   font-weight: 700;
   font-size: 26px;
-  line-height: 48px;
+  line-height: 184.615385%;
   text-align: center;
   color: #474747;
 }
@@ -722,6 +722,6 @@ h3 {
 h4 {
   font-weight: 700;
   font-size: 26px;
-  line-height: 48px;
+  line-height: 184.615385%;
   color: #474747;
 }
