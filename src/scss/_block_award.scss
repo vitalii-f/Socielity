@@ -1,0 +1,62 @@
+.award__wrapper {
+    margin-top: 110px;
+
+    .award__title {
+        @extend %default_wrapper;
+    }
+
+    .award__description {
+        @extend %default_wrapper;
+
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: $color-grey;
+
+        margin-top: 24px;
+    }
+
+    .award__swiper {
+        margin-top: 40px;
+
+        width: 100%;
+        height: 300px;
+        filter: drop-shadow(5px 10px 10px rgba(254, 241, 241, 0.5));
+        
+        .award__items {
+            height: 85%;
+            .award__item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                gap: 10px 0;
+    
+                background: $color-white;
+                border-radius: 16px;
+    
+                padding: 15px 5px;
+    
+                img {
+                    width: 160px;
+                    height: 105px;
+                }
+    
+                h4 {
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 140%;
+                    text-align: center;
+                    color: $color-primary;
+                }
+    
+                p {
+                    font-size: 14px;
+                    line-height: 129%;
+                    text-align: center;
+                    color: $color-grey;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.footer {
+    margin-top: 80px;
+    background-color: $color-primary;
+    .footer__wrapper {
+        @extend %default_wrapper;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px 20px;
+
+        color: $color-white;
+
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .footer__description {
+            flex: 0.5;
+
+            min-width: 200px;
+
+            font-size: 16px;
+            line-height: 150%;
+        }
+
+        .footer__column {
+            display: flex;
+            flex-direction: column;
+            
+            .footer__title {
+                margin-bottom: 30px;
+            }
+        }
+
+        h4 {
+            color: $color-white;
+            margin-bottom: 30px;
+            line-height: 120%;
+        }
+
+        h5 {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 140%;
+        }
+        
+        a {
+            color: $color-white;
+            margin-bottom: 15px;
+        }
+
+        .contact-row {
+            display: flex;
+            gap: 0 20px;            
+            margin-bottom: 15px;
+
+            img {
+                width: 21px;
+                height: 21px;
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.subscribe__wrapper {
+    @extend %default_wrapper;
+    margin-top: 110px;
+
+    .subscribe__description {
+        margin-top: 30px;
+
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: $color-grey;
+    }
+
+    form {
+        margin-top: 30px;
+
+        .form-field {
+            display: flex;
+            justify-content: space-between;
+
+            padding: 15px 20px;
+
+            height: 80px;
+            width: 80%;
+            margin: 0 auto;
+
+            background: $color-grey-5;
+            border-radius: 16px;
+
+            input[type="email"] {
+                flex: 1;
+                padding-left: 15px;
+
+                background-color: unset;
+                border: unset;
+
+                font-size: 20px;
+                line-height: 140%;
+                color: $color-grey;
+            }
+
+            input[type="submit"] {
+                @extend %btn_primary;
+                border: unset;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 150%;
+            }
+
+            @include screen-sm {
+                width: 100%;
+
+                input[type="email"] {
+                    flex: 1;
+                }
+    
+                input[type="submit"] {
+                }
+            }
+        }
+    }
+}

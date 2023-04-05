@@ -1,0 +1,51 @@
+.why-communitrader__wrapper {
+    @extend %default_wrapper;
+    margin-top: 120px;
+
+    .why-communitrader__description {
+        margin-top: 24px;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: $color-grey;
+    }
+    .why-communitrader__reasons {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px 15px;
+        flex-wrap: wrap;
+
+        @include screen-lg {
+            justify-content: space-around;
+        }
+
+        .reason {
+            padding: 20px 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 13px 0;
+            border-radius: 8px;
+            background-color: $color-card-bg;
+            max-width: 270px;
+            img {
+                width: 60px;
+                height: 60px;
+            }
+            h4 {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 28px;
+                text-align: center;
+                color: $color-grey-dark;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                color: $color-grey;
+            }
+        }
+    }
+}

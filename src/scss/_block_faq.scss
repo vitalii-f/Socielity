@@ -1,0 +1,45 @@
+.faq__wrapper {
+    @extend %default_wrapper;
+    margin-top: 110px;
+
+    .faq__description {
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+
+        color: #666666;
+    }
+    
+    .faq__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px 20px;
+
+        margin-top: 50px;
+        
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        color: $color-grey-light;
+
+        details {
+            border: 1px solid $color-grey-border;
+            border-radius: 10px;
+
+            background-color: $color-white;
+
+            padding: 23px 27px;
+            width: 47%;
+            min-width: 300px;
+
+            summary {
+                list-style: none;
+            }
+
+            @include screen-md {
+                width: 100%;
+            }
+        }
+    }
+}

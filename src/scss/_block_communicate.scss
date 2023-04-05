@@ -1,0 +1,35 @@
+.communicate__wrapper {
+    @extend %default_wrapper;
+    display: flex;
+    flex-direction: column;
+    gap: 120px 0;
+    margin-top: 110px;
+    .communicate__item {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        gap: 40px 40px;
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        img {
+            max-width: 455px - 5;
+        }
+        .communicate__text {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 25px 0;
+            min-width: 300px;
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                color: $color-grey;
+            }
+            .communicate__btn {
+                @extend %btn_primary;
+            }
+        }
+    }
+}

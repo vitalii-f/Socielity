@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+$main-font: 'Noto Sans', sans-serif;
+
+//colors start
+$color-white: #FFFFFF;
+$color-primary: #4579CB;
+$color-grey: #666666;
+$color-grey-dark: #474747;
+$color-grey-light: #8C8C8C;
+$color-grey-5: #E6E6E6;
+$color-grey-border: #CACACA;
+
+$color-card-bg: #F6F7FD;
+$color-video-fance: rgba(11, 68, 158, 0.9);
+
+$color-background-shading: rgba(28, 28, 28, 0.9);
+//colors end
+
+$content-width: 1200px;
+
+//breakpoints start
+$screen-xl-max: 1200px;
+$screen-lg-max: 992px;
+$screen-md-max: 768px;
+$screen-sm-max: 576px;
+//breakpoints end
+
+//default styles for section wrapper
+%default_wrapper {
+    max-width: $content-width;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+//default styles for buttons
+%btn_primary {
+    width: 170px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $color-primary;
+    color: $color-white;
+    border-radius: 8px;
+}
+
+//breakpoints mixins
+@mixin screen-xl {
+    @media (max-width: $screen-xl-max) {
+        @content;
+    }
+}
+
+@mixin screen-lg {
+    @media (max-width: $screen-lg-max) {
+        @content;
+    }
+}
+
+@mixin screen-md {
+    @media (max-width: $screen-md-max) {
+        @content;
+    }
+}
+
+@mixin screen-sm {
+    @media (max-width: $screen-sm-max) {
+        @content;
+    }
+}
+
+//import block`s styles
+@import './_header';
+@import './_hero';
+@import './_block_trusted.scss';
+@import './_block_communicate.scss';
+@import './_block_why-communitrader.scss';
+@import './_block_testimonial.scss';
+@import './_block_video.scss';
+@import './_block_faq.scss';
+@import './_block_award.scss';
+@import './_block_subscribe.scss';
+@import './_footer.scss';
+
+:root {
+    --swiper-theme-color: #{$color-primary} !important;
+
+    --swiper-pagination-bullet-inactive-color: #{$color-grey-light};
+    --swiper-pagination-bullet-size: 16px;
+
+    --swiper-navigation-size: 30px;
+    --swiper-navigation-color: #{$color-white};
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 48px;
+    text-align: center;
+    color: $color-grey-dark;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 48px;
+    color: $color-grey-dark;
+}

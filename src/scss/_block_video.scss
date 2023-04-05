@@ -1,0 +1,96 @@
+.video__wrapper {
+    @extend %default_wrapper;
+    margin-top: 110px;
+
+    .video__description {
+        margin-top: 24px;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: $color-grey;
+    }
+
+    .video__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 50px 10px;
+        margin-top: 60px;
+
+        @include screen-xl {
+            justify-content: center;
+        }
+
+        .video__item {
+            position: relative;
+            overflow: hidden;
+
+            border-radius: 30px;
+
+            filter: drop-shadow(10px 10px 40px rgba(0, 0, 0, 0.25));
+
+            & > *:not(img) {
+                position: absolute;
+
+                font-weight: 700;
+                font-size: 26px;
+                line-height: 138%;
+                color: $color-white;
+            }
+
+            .video__fance {
+                display: block;
+                background-color: $color-video-fance;
+                opacity: 1;
+                width: 70%;
+                height: 200%;
+                top: -20%;
+                left: -15%;
+                transform: rotate(-40deg);
+            }
+
+            .video__name {
+                bottom: 20%;
+                left: 5%;
+            }
+
+            .video__author {
+                bottom: 5%;
+                left: 5%;
+            }
+
+            .video__play {
+                width: 120px;
+                height: 120px;
+                border-radius: 100%;
+
+                top: 50%;
+                left: 50%;
+
+                transform: translate(-50%, -50%);
+                background: rgba(230, 230, 230, 0.8);
+                
+                cursor: pointer;
+
+                .btn-play {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+
+                    display: block;
+                    width: 0px;
+                    height: 0px;
+
+                    border-style: solid;
+                    border-width: 35px 0 35px 60px;
+                    border-color: transparent transparent transparent $color-white;
+                    border-radius: 4px;
+
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+}
