@@ -152,13 +152,19 @@
 }
 
 .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   min-height: 100vh;
   background-image: url("../img/hero_bg.svg");
   background-repeat: no-repeat;
   background-position: center center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .hero .hero__wrapper {
-  padding-top: 100px;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,7 +180,7 @@
 .hero .hero__wrapper .hero__title {
   padding: 0 2%;
   font-weight: 700;
-  font-size: clamp(30px, 3vw, 56px);
+  font-size: clamp(35px, 3vw, 56px);
   line-height: 139.285714%;
   text-align: center;
   letter-spacing: 0.02em;
@@ -246,9 +252,6 @@
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-}
-.communicate__wrapper .communicate__item img {
-  max-width: 450px;
 }
 .communicate__wrapper .communicate__item .communicate__text {
   -webkit-box-flex: 1;
@@ -516,6 +519,12 @@
 .faq__wrapper .faq__items details summary {
   list-style: none;
 }
+.faq__wrapper .faq__items details summary::after {
+  content: "+";
+}
+.faq__wrapper .faq__items details p {
+  margin-top: 20px;
+}
 @media (max-width: 768px) {
   .faq__wrapper .faq__items details {
     width: 100%;
@@ -612,14 +621,14 @@
   padding-left: 15px;
   background-color: unset;
   border: unset;
-  font-size: 20px;
+  font-size: 1.1rem;
   line-height: 140%;
   color: #666666;
 }
 .subscribe__wrapper form .form-field input[type=submit] {
   border: unset;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
 }
 @media (max-width: 576px) {
@@ -627,6 +636,8 @@
     width: 100%;
   }
   .subscribe__wrapper form .form-field input[type=email] {
+    padding-left: 0;
+    max-width: 100%;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;

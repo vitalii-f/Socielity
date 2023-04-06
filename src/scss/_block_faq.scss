@@ -35,6 +35,20 @@
 
             summary {
                 list-style: none;
+
+                &::after {
+                    content: "+";
+                }
+            }
+
+            p {
+                margin-top: 20px;
+            }
+
+            &[open] {
+                summary::after {
+                    
+                }
             }
 
             @include screen-md {

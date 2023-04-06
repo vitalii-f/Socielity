@@ -34,7 +34,8 @@
                 background-color: unset;
                 border: unset;
 
-                font-size: 20px;
+                // font-size: 20px;
+                font-size: clamp(1rem, 1.1rem, 1.2rem);
                 line-height: 140%;
                 color: $color-grey;
             }
@@ -43,7 +44,7 @@
                 @extend %btn_primary;
                 border: unset;
                 font-weight: 700;
-                font-size: 16px;
+                font-size: clamp(0.7rem, 1rem, 1.2rem);
                 line-height: 150%;
             }
 
@@ -51,6 +52,8 @@
                 width: 100%;
 
                 input[type="email"] {
+                    padding-left: 0;
+                    max-width: 100%;
                     flex: 1;
                 }
     
